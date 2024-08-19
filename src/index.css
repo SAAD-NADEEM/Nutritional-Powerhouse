@@ -426,7 +426,7 @@ header {
   text-align: center;
 }
 .recipegen h2 {
-  font-size: 1.5rem;
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
   color: var(--clr-100);
   padding: 5px 0;
   text-decoration: underline;
@@ -435,7 +435,8 @@ header {
   color: var(--clr-200);
 }
 .recipegen > div img {
-  height: 400px;
+  height: clamp(170px, 50vw, 400px);
+  width: auto;
   border-radius: 10px;
   /* width: 100px; */
 }
@@ -453,5 +454,10 @@ header {
   .details-ctn ul {
   gap: 0px !important;
     flex-direction: column;
+  }
+
+  .recipegen > div img {
+    width: 100%;
+    height: auto;
   }
 }
