@@ -270,7 +270,7 @@ const App: React.FC = () => {
           }
         })
 
-        const prompt = `check if ${query} is actually a fruit name or a vegetable name, if yes then just say Yes, if not just say "No", remeber anything other than fruits or vegetable, or egg or anything like that, your answer should be "No". Your answer should either be Yes without any special characters or hidden white spaces, or "No"`
+        const prompt = `check if ${query} is actually a fruit name or a vegetable name, if yes then just say Yes, broccoli is also a vegetable, if not just say "No", remeber anything other than fruits or vegetable, or egg or anything like that, your answer should be "No". Your answer should either be Yes without any special characters or hidden white spaces, or "No"`
 
         const result = await model.generateContent(prompt)
         const res = await result.response
