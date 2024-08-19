@@ -9,13 +9,13 @@ function Header() {
         <>
         <header className="flex-column center" >
             <section className="header-top flex-row center">
-                <img src="./src/Images/title.svg" alt="Logo" />
+                <img src="/title.svg" alt="Logo" />
                 <div className="logo-ctn fs-heading">Nutritional Powerhouse</div>
             </section>
             <section className="header-bottom flex-row">
                 <div className="sec-1 flex-row center">
                     {/* <div></div> */}
-                    <img src="./src/Images/banner.png" alt="" />
+                    <img src="/banner.png" alt="" />
                 </div>
                 <div className="sec-2 flex-column">
                     <h1 className="fs-paragraph">
